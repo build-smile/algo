@@ -1,44 +1,42 @@
 package main
 
-import "algo/service"
+import (
+	"algo/service"
+	"fmt"
+)
 
 func main() {
 
-	service.AddTwoNumbers(
+	// 1
+	fmt.Printf("%v", service.AddTwoNumbers(
+		//111
 		&service.ListNode{
-			Val: 9,
+			Val: 1,
 			Next: &service.ListNode{
-				Val: 9,
+				Val: 1,
 				Next: &service.ListNode{
-					Val: 9,
-					Next: &service.ListNode{
-						Val: 9,
-						Next: &service.ListNode{
-							Val: 9,
-							Next: &service.ListNode{
-								Val: 9,
-								Next: &service.ListNode{
-									Val:  9,
-									Next: nil,
-								},
-							},
-						},
-					},
+					Val:  1,
+					Next: nil,
 				},
 			},
 		},
+		// 4321
 		&service.ListNode{
-			Val: 9,
+			Val: 1,
 			Next: &service.ListNode{
-				Val: 9,
+				Val: 2,
 				Next: &service.ListNode{
-					Val: 9,
+					Val: 3,
 					Next: &service.ListNode{
-						Val:  9,
+						Val:  4,
 						Next: nil,
 					},
 				},
 			},
 		},
-	)
+	))
+
+	//2
+	fmt.Println(service.LongestSubstringWithoutDuplicate("abcabcbbgit "))
+
 }
