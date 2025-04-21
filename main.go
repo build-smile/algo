@@ -39,4 +39,12 @@ func main() {
 	//2
 	fmt.Println(service.LongestSubstringWithoutDuplicate("abcabcbbgit "))
 
+	//3
+	fmt.Println(service.RomanToInt("XIIIII"))
+
+	sum(1, 3)
+}
+
+func sum(a, b int) int {
+	return a + b
 }
